@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pufei.dashi">
+    package="com.wangshen.daqian">
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -16,30 +16,30 @@
         android:required="false" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
-        android:name="com.pufei.dashi.app.App"
+        android:name="com.wangshen.daqian.app.App"
         android:theme="@style/AppTheme">
         <activity
             android:theme="@style/AppTheme"
-            android:name="com.pufei.dashi.MainActivity">
+            android:name="com.wangshen.daqian.MainActivity">
 
         </activity>
         <activity
             android:theme="@style/AppTheme"
-            android:name="com.pufei.dashi.module.exercise.ui.FindMvpActivity">
+            android:name="com.wangshen.daqian.module.exercise.ui.FindMvpActivity">
 
         </activity>
-        <activity android:name=".module.start.ui.SplashActivity">
+        <activity android:name="com.wangshen.daqian.module.start.ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.start.ui.StartActivity">
+        <activity android:name="com.wangshen.daqian.module.start.ui.StartActivity">
 
         </activity>
     </application>

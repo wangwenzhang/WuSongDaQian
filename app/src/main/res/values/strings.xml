@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">驾考大师</string>
-    <string name="examination">练习</string>
-    <string name="exercise">考试</string>
-    <string name="mistakes">错题</string>
+    <string name="app_name">武松打钱</string>
+    <string name="examination">首页</string>
+    <string name="exercise">参考</string>
+    <string name="mistakes">理财</string>
     <string name="user">我的</string>
 </resources>

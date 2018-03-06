@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context="com.pufei.dashi.MainActivity">
+    tools:context="com.wangshen.daqian.MainActivity">
 
     <TextView
         android:id="@+id/main"
