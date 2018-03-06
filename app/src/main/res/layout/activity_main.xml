@@ -22,29 +22,29 @@
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <RadioButton
-            android:drawableTop="@null"
-            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/home_selector"
+
             style="@style/tab_style"
             android:text="@string/examination"
             />
         <RadioButton
 
-            android:drawableTop="@null"
-            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/reference_selector"
+
             style="@style/tab_style"
             android:text="@string/exercise"
             />
         <RadioButton
 
-            android:drawableTop="@null"
-            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/money_selector"
+
             style="@style/tab_style"
             android:text="@string/mistakes"
             />
         <RadioButton
 
-            android:drawableTop="@null"
-            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/mine_selector"
+
             style="@style/tab_style"
             android:text="@string/user"
             />

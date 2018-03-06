@@ -4,6 +4,8 @@ package com.wangshen.daqian.module.start.ui;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.widget.Button;
@@ -13,6 +15,9 @@ import android.widget.Toast;
 import com.wangshen.daqian.MainActivity;
 import com.wangshen.daqian.R;
 import com.wangshen.daqian.base.BaseActivity;
+
+import java.lang.ref.WeakReference;
+
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -29,15 +34,13 @@ import permissions.dispatcher.RuntimePermissions;
 @RuntimePermissions
 public class SplashActivity extends BaseActivity {
 
-
-    @BindView(R.id.splash_btn)
-    Button splashBtn;
     @BindView(R.id.splash_iv)
     ImageView splashIv;
-
+    private MyHandler myHandler;
     @Override
     public void initView() {
-
+        myHandler=new MyHandler(this);
+        myHandler.sendEmptyMessageDelayed(0,2000);
     }
 
     @Override
@@ -52,7 +55,6 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-
         SplashActivityPermissionsDispatcher.onSaveImageWithCheck(this);
     }
 
@@ -93,11 +95,29 @@ public class SplashActivity extends BaseActivity {
     void showNeverAsk() {
 
     }
-
-    @OnClick(R.id.splash_btn)
-    public void onViewClicked() {
-        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+    public void startActivity(SplashActivity activity){
+        startActivity(new Intent(activity, MainActivity.class));
+        finish();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        myHandler.removeCallbacksAndMessages(null);
+    }
+
+    private static class MyHandler extends Handler {
+        private WeakReference<SplashActivity> mActivity;
+
+        public MyHandler(SplashActivity activity){
+            mActivity = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            mActivity.get().startActivity(mActivity.get());
+        }
+    }
 
 }

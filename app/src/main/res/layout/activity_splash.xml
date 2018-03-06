@@ -4,13 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/splash_btn"
-        android:text="点击"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <ImageView
         android:id="@+id/splash_iv"
+        android:src="@mipmap/cmblaunch"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
