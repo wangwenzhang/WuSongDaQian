@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">驾考大师</string>
+    <string name="examination">练习</string>
+    <string name="exercise">考试</string>
+    <string name="mistakes">错题</string>
+    <string name="user">我的</string>
+</resources>
