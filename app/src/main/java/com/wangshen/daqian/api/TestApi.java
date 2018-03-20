@@ -1,6 +1,6 @@
 package com.wangshen.daqian.api;
 
-import com.wangshen.daqian.module.exercise.model.FindModle;
+import com.wangshen.daqian.module.reference.model.FindModle;
 
 import io.reactivex.Observable;
 import okhttp3.RequestBody;

@@ -8,12 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.wangshen.daqian.module.exercise.ui.FindMvpActivity;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AutoLayoutActivity {
     @BindView(R.id.main)
     TextView textView;
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, FindMvpActivity.class));
+                //startActivity(new Intent(MainActivity.this, FindMvpActivity.class));
             }
         });
     }

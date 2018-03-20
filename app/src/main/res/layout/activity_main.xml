@@ -17,34 +17,33 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <View
+        android:background="@color/tab_true"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+
+    </View>
     <RadioGroup
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="50dp">
         <RadioButton
             android:drawableTop="@drawable/home_selector"
-
             style="@style/tab_style"
-            android:text="@string/examination"
+            android:text="@string/home"
             />
         <RadioButton
-
             android:drawableTop="@drawable/reference_selector"
-
             style="@style/tab_style"
-            android:text="@string/exercise"
+            android:text="@string/reference"
             />
         <RadioButton
-
             android:drawableTop="@drawable/money_selector"
-
             style="@style/tab_style"
-            android:text="@string/mistakes"
+            android:text="@string/money"
             />
         <RadioButton
-
             android:drawableTop="@drawable/mine_selector"
-
             style="@style/tab_style"
             android:text="@string/user"
             />

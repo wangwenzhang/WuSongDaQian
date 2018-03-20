@@ -1,7 +1,7 @@
-package com.wangshen.daqian.module.examination.presenter;
+package com.wangshen.daqian.module.home.presenter;
 
 import com.wangshen.daqian.base.BasePresenter;
-import com.wangshen.daqian.module.examination.view.ExaminationView;
+import com.wangshen.daqian.module.home.view.ExaminationView;
 
 /**
  * 创建者： wangwenzhang 时间： 2018/3/5.

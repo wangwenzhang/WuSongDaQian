@@ -6,4 +6,6 @@
     <color name="Pink">#e91e63</color>
     <color name="tab_false">#9B9B9B</color>
     <color name="tab_true">#000000</color>
+    <color name="blank">#000000</color>
+    <color name="login_code">#FFCE0E</color>
 </resources>

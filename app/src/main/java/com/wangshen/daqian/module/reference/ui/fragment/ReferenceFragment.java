@@ -1,14 +1,14 @@
-package com.wangshen.daqian.module.exercise.ui.fragment;
+package com.wangshen.daqian.module.reference.ui.fragment;
 
 import com.wangshen.daqian.base.BaseMvpFragment;
-import com.wangshen.daqian.module.exercise.presenter.ExercisePresenter;
-import com.wangshen.daqian.module.exercise.view.ExerciseView;
+import com.wangshen.daqian.module.reference.presenter.ExercisePresenter;
+import com.wangshen.daqian.module.reference.view.ExerciseView;
 
 /**
  * 创建者： wangwenzhang 时间： 2018/3/5.
  */
 
-public class ExerciseFragment extends BaseMvpFragment<ExercisePresenter> implements ExerciseView {
+public class ReferenceFragment extends BaseMvpFragment<ExercisePresenter> implements ExerciseView {
     @Override
     public void onShowLoading() {
 

@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.wangshen.daqian.utils.LogUtils;
 import com.wangshen.daqian.utils.SharedPreferencesUtil;
+import com.zhy.autolayout.config.AutoLayoutConifg;
 
 /**
  * APP初始化类
@@ -19,6 +20,7 @@ public class App extends Application {
         LogUtils.isShow=true;
         AppContext = getApplicationContext();
         initPrefs();
+        AutoLayoutConifg.getInstance().useDeviceSize();
     }
     /**
      * 初始化SharedPreference

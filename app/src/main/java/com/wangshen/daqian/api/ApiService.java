@@ -12,11 +12,19 @@ import retrofit2.Retrofit;
 
 public class ApiService {
     private static TestApi model;
+    private static LoginApi loginApi;
     public static TestApi getBaseModle(){
         if (model==null){
             Retrofit retrofit = RetrofitFactory.getRetrofit();
             model = retrofit.create(TestApi.class);
         }
         return model;
+    }
+    public static LoginApi getLoginApi(){
+        if (null==loginApi){
+            Retrofit retrofit=RetrofitFactory.getRetrofit();
+            loginApi=retrofit.create(LoginApi.class);
+        }
+        return loginApi;
     }
 }

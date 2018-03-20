@@ -1,7 +1,7 @@
-package com.wangshen.daqian.module.exercise.presenter;
+package com.wangshen.daqian.module.reference.presenter;
 
 import com.wangshen.daqian.base.BasePresenter;
-import com.wangshen.daqian.module.exercise.view.ExerciseView;
+import com.wangshen.daqian.module.reference.view.ExerciseView;
 
 /**
  * 所有的Presenter都应继承BasePresenter,并且根据需求增加方法

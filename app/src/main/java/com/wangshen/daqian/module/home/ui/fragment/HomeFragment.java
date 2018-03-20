@@ -1,14 +1,14 @@
-package com.wangshen.daqian.module.examination.ui.fragment;
+package com.wangshen.daqian.module.home.ui.fragment;
 
 import com.wangshen.daqian.base.BaseMvpFragment;
-import com.wangshen.daqian.module.examination.presenter.ExaminationPresenter;
-import com.wangshen.daqian.module.examination.view.ExaminationView;
+import com.wangshen.daqian.module.home.presenter.ExaminationPresenter;
+import com.wangshen.daqian.module.home.view.ExaminationView;
 
 /**
  * 创建者： wangwenzhang 时间： 2018/3/5.
  */
 
-public class ExaminationFragment extends BaseMvpFragment<ExaminationPresenter> implements ExaminationView{
+public class HomeFragment extends BaseMvpFragment<ExaminationPresenter> implements ExaminationView{
     @Override
     public void onShowLoading() {
 

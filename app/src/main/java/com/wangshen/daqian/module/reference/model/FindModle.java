@@ -1,4 +1,4 @@
-package com.wangshen.daqian.module.exercise.model;
+package com.wangshen.daqian.module.reference.model;
 
 /**
  * 暂时以数据模型作为M层，正常应是获取数据为M层，为了简化获取数据写在P层
